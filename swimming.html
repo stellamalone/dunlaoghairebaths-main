@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Swimming</title>
+</head>
+    
+<body>
+
+
+   <!-- Header-->
+   <!-- When class is "fixed" -> NavBar is transparent and it overlays hero image
+   When class is "sticky" - > NavBar is white (bg color) and it do not overlays hero image -->
+    <nav class="navbar navbar-expand-sm sticky"> 
+        <div class="container-fluid m-2">
+            <a class="navbar-brand" href="/">
+              <img src="assets/logo.png" alt="Logo of website" width="130" height="50" class="d-inline-block align-text-center">
+             
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mx-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/daytrip.html">DayTrip</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/swimming.html">Swimming</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/gallery.html">Photo Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/history.html">History</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Hero image -->
+    <div class="hero card text-center"> 
+        <div class="hero-image-container">
+           <!-- <img src="assets/hero-image1.jpg" class="card-img img-fluid w-100" alt="Sea view through the window">  -->
+           <!-- The video is purely decorative, so controls are not necessary, it plays automatically, loops, and is muted. -->
+             <video src="assets/swimming.mp4" class="object-fit-contain w-100" autoplay loop muted playsinline> </video>
+        </div>
+        
+        <div class="card-img-overlay d-flex flex-column justify-content-end text-white"> 
+            <h1 class="card-title hero-card-title"><strong>Let’s swim</strong></h1>
+            <!--  <div class="text-background">Wrapper div with the custom class -->
+                <p class="card-text d-none d-sm-block text-background">
+                    Join us at the water's edge. <br>
+                    Start your own fun adventure at the Dun Laoghaire Baths.<br> 
+                    We can't wait to see you here!
+                </p>
+            <!-- </div> -->
+        </div>
+    </div>
+
+<!-- Start: CONTENT-->    
+    <div class="content">
+        <!-- Weather Widget -->
+        <a class="weatherwidget-io" href="https://forecast7.com/en/53d29n6d13/dun-laoghaire/" data-label_1="DÚN LAOGHAIRE" data-label_2="WEATHER" data-theme="original" >DÚN LAOGHAIRE WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+
+        <!-- Tradition of bathing-->
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 d-flex align-items-center"> 
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Tradition of bathing</h2>
+                        <p class="card-text">Bathing has been a favourite activity since the 1700s. Back then, it was more than just swimming. People loved it for staying healthy, relaxing, and hanging out with friends. It was a special way to enjoy nature and feel good.</p>
+                        <p class="card-text">At Dun Laoghaire Baths, we keep this old tradition alive. Here, you can feel the history in the waves and hear it in the happy sounds of people swimming. Bathing used to be something only fancy people did, but now everyone enjoys it. It's all about having a good time, feeling well, and enjoying life's simple moments.</p>
+                        <p class="card-text">When you swim with us, you're joining a long story that started a long time ago. Dun Laoghaire Baths is proud of this story, and we're excited for you to be a part of it. Join in, feel the history, and have fun in this age-old tradition of bathing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6"> 
+                    <img src="assets/tradition-of-bathing.jpg" class="img-fluid w-100 h-100" alt="Tradition of bathing" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+ 
+        
+        <!-- Benefits of bathing-->       
+        <div class="background-box">
+            <div class="container">
+                <div class="row">
+                    <div class="contact background-box text-center">
+                        <h2 class="text-black pt-4">Discover the benefits of bathing</h2>
+                        <h3 class="text-black">Bathing isn't just about getting wet, it's great for you in many ways</h3>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                     <h3 class="card-title text-center"><strong>Keeps you healthy</strong></h3>
+                                     <p class="card-text">Bathing is fantastic for your physical health. It gets your body moving and your heart pumping, improving circulation and cardiovascular health. The natural resistance of water makes it a gentle yet effective way to exercise, perfect for all ages and fitness levels.
+                                     </p>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center"><strong>Stress relief</strong></h3>
+                                    <p class="card-text">Immerse yourself into the water and let your stress melt away. The calming sound of the waves and the soothing rhythm of swimming can help clear your mind, reduce anxiety, and promote a sense of inner peace.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center"><strong>Social interaction</strong></h3>
+                                    <p class="card-text">Bathing is a wonderful way to connect with friends and family or meet new people. It's a social activity that brings people together, creating memories and strengthening community bonds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center"><strong>Connection with nature</strong></h3>
+                                    <p class="card-text">Being in and around water allows you to connect with nature, enjoy the fresh air, and soak in the beautiful surroundings. It's a refreshing escape from the hustle and bustle of everyday life.
+                                    </p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!-- Start your swimming journey--> 
+
+      
+        <div class="container">
+            <div class="row">
+                <div class="contact text-center">
+                    <h2 class="text-black pt-4">Start your swimming journey now</h2>
+                    <h3 class="text-black">Are you ready to dive into swimming but not sure how to begin?<br>Here's how you can dive in and make the most of your swimming experience.</h3>
+                </div>
+                <div class="row g-4"> <!-- Use g-4 for spacing between cards -->
+                    <div class="col-lg-3 col-md-6"> <!-- Use col-md-3 to ensure 4 cards in a row -->
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Seasonal swim</strong></h3>
+                                <p class="card-text">Each season brings unique swim experiences: summer's warm waters for beginners, spring/fall's cool swims, and winter's crisp waters for adventure and health.  
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Duration in water</strong></h3>
+                                <p class="card-text">For new swimmers or cold seasons, begin with brief sessions to acclimate. In warm water, extend swim time as comfortable, but avoid overexertion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Start slow</strong></h3>
+                                <p class="card-text">Start in shallow water, gradually acclimating yourself. Practice floating, gentle kicking, and simple strokes to increase water confidence, comfort, and swimming proficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Dry off quickly</strong></h3>
+                                <p class="card-text">As soon as you exit the water, dry yourself thoroughly. It's essential to get out of your wet swimwear as soon as possible to stop the evaporation process, which can make you feel colder.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6"> 
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Dress in  layers</strong></h3>
+                                <p class="card-text">Have warm clothing ready for post-swim. Layering is crucial. It facilitates easy adjustment to body temperature changes, ensuring comfort and warmth.   
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6"> 
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Sip warm fluid</strong></h3>
+                                <p class="card-text">Drink a warm beverage like herbal tea, warm water, or a sports drink. It not only helps to warm you from the inside but also assists in rehydration. 
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6"> 
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Move around</strong></h3>
+                                <p class="card-text">Do gentle exercise to generate body heat. Walking, stretching, or gentle jogging on the spot can help increase circulation and warm your body.
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6"> 
+                        <div class="card custom-bg-color h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><strong>Stay safe</strong></h3>
+                                <p class="card-text">Follow swimming rules, listen to lifeguards, and never swim alone. Respect your limits and prioritize safety, especially in cold months.
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Facilities we provide-->  
+        
+    <div class="container">
+        <div class="row align-items-center"> 
+            <div class="col-md-6">
+                <h2>We provide facilities:</h2>
+            </div>
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="assets/shower.png" class="small-image" alt="Shower">
+                </div>
+            </div>
+                <div class="col-md-2 mb-3">
+                    <div class="card">
+                        <img src="assets/changingPlace.png" class="small-image" alt="Changing Place">
+                    </div>
+                </div>
+            <div class="col-md-2 mb-3">
+                <div class="card">
+                    <img src="assets/bathroom.png" class="small-image" alt="Bathroom">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+         
+        
+<!-- Swimmer's community-->
+
+    <div class="background-box">
+        <div class="container">
+            <div class="contact background-box text-center">
+                <h2 class="text-black pt-4">Make friends and join our swimmers' community</h2>
+                <h3 class="text-black">We organise regular social swims and events!</h3>
+            </div>
+            <img src="assets/activity.jpg" class="card-img" alt="We organise activity for swimmer's community">
+            <div class="contact background-box text-center">
+                <h3 class="text-black">Join our social media groups. Stay connected with our online community!</h3>
+            </div>
+            <div class="social-media col-12 text-center">
+                <p>
+                    <a href="http://facebook.com">
+                        <img src="assets/facebook-black.png" alt="Facebook" class="image-icon d-inline-block align-middle me-2"> 
+                    </a>
+                    <a href="http://twitter.com">
+                        <img src="assets/twitter-black.png" alt="Twitter" class="image-icon d-inline-block align-middle me-2">
+                    </a>
+                    <a href="http://instagram.com">
+                        <img src="assets/isntagram-black.png" alt="Instagram" class="image-icon d-inline-block align-middle me-2"> 
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Places to swim nearby-->    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-start">
+                <h2>Places to swim nearby</h2>
+                <h3>Dun Laoghaire Baths is just one of many great places to swim around here</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="assets/sandycove-beach.jpg" class="card-img-top" alt="Sandycove beach">
+                <h3 class="text-center">Sandycove Beach</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="assets/theFortyFoot-beach.jpg" class="card-img-top" alt="The Forty Foot beach">
+                <h3 class="text-center">The Forty Foot beach</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="assets/seapoint-beach.jpg" class="card-img-top" alt="Seapoint beach">
+                <h3 class="text-center" >Seapoint beach</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End: CONTENT-->  
+        
+<!-- Footer-->      
+<div>
+    <footer class="footer-custom-bg text-white text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-lg-left align-items-center">
+                    <a href="/">
+                        <img src="assets/logo-white.png" alt="Logo of website" width="130" class="mb-2">
+                    </a>   
+                </div>
+                
+                <div class="social-media col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h3 class="text-uppercase">Social media</h3>
+                    <p>
+                        <a href="http://facebook.com">
+                            <img src="assets/facebook.png" alt="Facebook" class="image-icon d-inline-block align-middle me-2"> 
+                        </a>
+                        <a href="http://twitter.com">
+                            <img src="assets/twitter.png" alt="Twitter" class="image-icon d-inline-block align-middle me-2">
+                        </a>
+                        <a href="http://instagram.com">
+                            <img src="assets/instagram.png" alt="Instagram" class="image-icon d-inline-block align-middle me-2"> 
+                        </a>
+                    </p>
+                </div>
+            
+                <div class="custom-link col-lg-3 col-md-6 mb-4 mb-md-5">
+                    <h3 class="text-uppercase mb-04">Quick links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white">Home</a></li>
+                        <li class="nav-item mb-2"><a href="/daytrip.html" class="nav-link p-0 text-white">DayTrip</a></li>
+                        <li class="nav-item mb-2"><a href="/swimming.html" class="nav-link p-0 text-white">Swimming</a></li>
+                        <li class="nav-item mb-2"><a href="/gallery.html" class="nav-link p-0 text-white">Photo Gallery</a></li>
+                        <li class="nav-item mb-2"><a href="/history.html" class="nav-link p-0 text-white">History</a></li>
+                        <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0 text-white">Contact</a></li>
+                        <li class="nav-item mb-2"><a href="/accessibility.html" class="nav-link p-0 text-white">Accessibility</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h3 class="text-uppercase mb-04">Contact</h3>
+                        <p>
+                            <img src="assets/telephone.png" alt="Telephone" class="image-icon d-inline-block align-middle me-2">
+                            (123) 456 - 7890
+                        </p>
+                        <p>
+                            <img src="assets/email.png" alt="Email" class="image-icon d-inline-block align-middle me-2">
+                            hello@dunlaoghairebaths.com
+                        </p>
+                        <p>
+                            <img src="assets/location.png" alt="Location" class="image-icon d-inline-block align-middle me-2">
+                            Windsor Terrace, Glasthule, Co. Dublin
+                        </p>
+                </div>
+            </div>
+        </div>
+
+       <!-- Subscribe-->
+    <div class="d-flex justify-content-center">
+        <form>
+            <p class="text-uppercase">Subscribe to latest news and updates</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control subscribe-input" placeholder="Enter email address">
+                <button class="btn btn-primary subscribe-btn" type="button">Subscribe</button>
+            </div>
+        </form>
+    </div>
+        
+        <div class="text-center p-3 pt-5">
+            © 2024 All rights reserved.
+        </div>
+    </footer>
+</div>  
+        
+</body>
+</html>

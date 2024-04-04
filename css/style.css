@@ -1,0 +1,475 @@
+body {
+    font-family: "Verdana", sans-serif !important;
+}
+
+.smaller-heading {
+    font-size: 20px; /* Set the font size smaller than the default for h2 */
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Navigation bar */
+/* Change text color for nav links */
+
+nav {
+    /*Make Navigation background opaque*/
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.fixed {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+
+/* Override Navigation links color*/
+.nav-link {
+    color: #152a56;
+}
+
+/* Make active link bold */
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Footer style */
+.footer-custom-bg {
+    background-color: #152a56 !important;
+}
+
+/*Remove space underly next to the image*/
+.social-media a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Removing the underline from links */
+.col-lg-3.col-md-6.mb-4.mb-md-5 a {
+    text-decoration: none;
+}
+
+.content > div:nth-child(n + 2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Get in Touch form style */
+.background-box {
+    background-color: #c4cad5;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 100rem;
+    margin: auto;
+}
+
+.btn {
+    background-color: #bf5431;
+    border-color: #bf5431;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #152a56;
+}
+
+/* Emergency cards */
+.custom-bg-color {
+    background-color: #c4cad5;
+}
+
+/* Swimming page facilities icons*/
+.small-image {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+/* Hero image */
+.hero {
+    margin-bottom: 50px;
+    background-color: #000000; /*Prevents false WAVE errors on contrast*/
+}
+
+/* Make hero text smaller on small screen.
+Unfortunately, doesnt work in Chrome */
+@media only screen and (max-width: 576px) {
+    .hero-card-title {
+        font-size: 1rem;
+    }
+}
+
+.hero-image-container {
+    max-height: 792px;
+    width: auto;
+    overflow: hidden;
+    display: inline-block;
+    filter: brightness(0.8);
+}
+
+.hero-image-container img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* This ensures the image covers the area, cropping instead of resizing */
+    object-position: bottom; /* Aligns the image to ensure the bottom part is always visible */
+}
+
+.card-img-overlay {
+    padding-bottom: 20%;
+}
+
+/* Borders around cards */
+.card {
+    border: none !important; /* Removes border */
+}
+
+/* Used to represent different icons based on images*/
+.image-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Homepage styles */
+/* Custom class for justifying text */
+.text-justify {
+    text-align: justify;
+}
+/* day trip bg section */
+.daytrip-bg-color {
+    background-color: #c4cad5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* End of Homepage styles */
+
+/* Daytrip styles */
+.daytrip-card {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; /* Ensure the image takes the full width of its parent */
+    margin-bottom: 20px;
+}
+
+
+
+.daytrip-market-img {
+    width: 699px;
+    height: 505px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.card-img-top {
+    height: 310px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-img-top:hover {
+    opacity: 0.8;
+}
+
+
+
+.filled {
+    color: #bf5431;
+}
+
+/* End Of Daytrip styles */
+
+/* Accessibility page styles */
+/* Add padding-top to content with this class */
+.with-padding-top {
+    padding-top: 100px;
+}
+/* Blue color */
+.text-blue {
+    color: #152a56;
+}
+/* End Accessibility page styles */
+
+/*---------start of history----------*/
+.cd-container {
+    width: 100%;
+    margin: 0 auto;
+    background: #c4cad5;
+    padding: 0 2%;
+    border-radius: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.timeline-caption-image {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+.cd-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#cd-timeline {
+    position: relative;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#cd-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 100%;
+    width: 4px;
+    background: #152a56;
+}
+
+@media only screen and (min-width: 1170px) {
+    #cd-timeline {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    #cd-timeline::before {
+        left: 50%;
+        margin-left: -2px;
+    }
+}
+
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
+
+.cd-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-block {
+        margin: 4em 0;
+    }
+
+    .cd-timeline-block:first-child {
+        margin-top: 0;
+    }
+
+    .cd-timeline-block:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.cd-timeline-img {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #152a56, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+        0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-timeline-img {
+    background: #152a56;
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-img {
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: 15px;
+    }
+}
+
+.cd-timeline-content {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 30px;
+    background: #152a56;
+    border-radius: 2px;
+    padding: 1em;
+}
+
+.cd-timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-timeline-content h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.cd-timeline-content p,
+.cd-timeline-content .cd-date {
+    color: white;
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+
+.cd-timeline-content .cd-date {
+    display: inline-block;
+}
+
+.cd-timeline-content p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.cd-timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid #333c42;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-timeline-content h2 {
+        font-size: 20px;
+        font-size: 1.25rem;
+    }
+
+    .cd-timeline-content p {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    .cd-timeline-content .cd-read-more,
+    .cd-timeline-content .cd-date {
+        font-size: 14px;
+        font-size: 0.875rem;
+    }
+}
+
+.cd-timeline-image {
+    display: none;
+    position: absolute;
+    width: 36%;
+}
+
+@media only screen and (min-width: 1170px) {
+
+    .cd-timeline-content,
+    .cd-timeline-image {
+        float: right;
+        clear: both;
+        width: 36%;
+        padding: 1.6em;
+        margin: 0 10%;
+    }
+
+    .cd-timeline-block:nth-child(even) .cd-timeline-content {
+        float: left;
+    }
+
+    .cd-timeline-block:nth-child(odd) .cd-timeline-image {
+        display: block;
+        right: 50%;
+        margin-right: 2%;
+    }
+
+    .cd-timeline-block:nth-child(even) .cd-timeline-image {
+        display: block;
+        left: 50%;
+        margin-left: 2%;
+    }
+
+    .cd-timeline-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-height: 100%;
+        opacity: 0.5;
+    }
+
+    .cd-timeline-content {
+        position: relative;
+    }
+
+    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color: #333c42;
+    }
+
+    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+        position: absolute;
+        width: 100%;
+        left: auto;
+        right: 122%;
+        top: 6px;
+        font-size: 16px;
+    }
+
+    .cd-timeline-block:nth-child(even) .cd-timeline-image {
+        float: right;
+    }
+
+    .cd-timeline-block:nth-child(odd) .cd-timeline-image {
+        float: left;
+    }
+}
+
+/*---------end of history----------*/
+
+/*------- New Section for Carousel Customization -------*/
+
+/* Carousel Container */
+#carouselExample {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Carousel Images*/
+#carouselExample .carousel-item img {
+    object-fit: cover;
+    height: 650px;
+    width: 100%;
+}
+
+/* Responsive Adjustments for Carousel */
+@media (max-width: 768px) {
+    #carouselExample .carousel-item img {
+        height: 300px;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+}
+
+/*------- End of New Section for Carousel Customization -------*/
